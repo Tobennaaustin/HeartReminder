@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 17px;
+  }
+
+  .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    display: block;
+    color: rgba(0, 0, 0, 0.495);
+    font-size: 30px;
+  }
+  
+
+  .navbar a.active {
+    color: black;
+  }
+
+  /* header code */
+  .header_bar{
+    padding-top: 20px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header_bar h1{
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+
+  .header_bar button{
+    background-color: white;
+    padding: 10px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+  }
+
+  /* modal code */
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: 50%; 
+    overflow: auto; 
+    
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 15px;
+  }
+
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* gallery box */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  .column img {
+    margin-top: 12px;
+    border-radius: 10px;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
