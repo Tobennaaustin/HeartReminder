@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+        window.OneSignalDeferred = window.OneSignalDeferred || [];
+        OneSignalDeferred.push(async function (OneSignal) {
+            await OneSignal.init({
+                appId: "07564a22-481b-40ba-9b1b-de8c8e463c7e",
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -46,14 +55,14 @@
         </div>
 
     </div>
-    <div class="row"> 
+    <div class="row">
         <div class="column">
-          <img src="Image/IMG-20240604-WA0177.jpg" style="width:100%">
-          <img src="Image/IMG-20240604-WA0182.jpg" style="width:100%">
-          <img src="Image/IMG-20240604-WA0183.jpg" style="width:100%">
-          <img src="Image/IMG-20240604-WA0184.jpg" style="width:100%">
-          <img src="Image/IMG-20240604-WA0183.jpg" style="width:100%">
-          <img src="Image/IMG-20240604-WA0184.jpg" style="width:100%">
+            <img src="Image/IMG-20240604-WA0177.jpg" style="width:100%">
+            <img src="Image/IMG-20240604-WA0182.jpg" style="width:100%">
+            <img src="Image/IMG-20240604-WA0183.jpg" style="width:100%">
+            <img src="Image/IMG-20240604-WA0184.jpg" style="width:100%">
+            <img src="Image/IMG-20240604-WA0183.jpg" style="width:100%">
+            <img src="Image/IMG-20240604-WA0184.jpg" style="width:100%">
         </div>
         <div class="column">
             <img src="Image/IMG-20240604-WA0177.jpg" style="width:100%">
@@ -62,30 +71,31 @@
             <img src="Image/IMG-20240604-WA0184.jpg" style="width:100%">
             <img src="Image/IMG-20240604-WA0183.jpg" style="width:100%">
             <img src="Image/IMG-20240604-WA0184.jpg" style="width:100%">
-          </div>
-          <div class="column">
+        </div>
+        <div class="column">
             <img src="Image/IMG-20240604-WA0177.jpg" style="width:100%">
             <img src="Image/IMG-20240604-WA0182.jpg" style="width:100%">
             <img src="Image/IMG-20240604-WA0183.jpg" style="width:100%">
             <img src="Image/IMG-20240604-WA0184.jpg" style="width:100%">
             <img src="Image/IMG-20240604-WA0183.jpg" style="width:100%">
             <img src="Image/IMG-20240604-WA0184.jpg" style="width:100%">
-          </div>
-          <div class="column">
+        </div>
+        <div class="column">
             <img src="Image/IMG-20240604-WA0177.jpg" style="width:100%">
             <img src="Image/IMG-20240604-WA0182.jpg" style="width:100%">
             <img src="Image/IMG-20240604-WA0183.jpg" style="width:100%">
             <img src="Image/IMG-20240604-WA0184.jpg" style="width:100%">
             <img src="Image/IMG-20240604-WA0183.jpg" style="width:100%">
             <img src="Image/IMG-20240604-WA0184.jpg" style="width:100%">
-          </div>
-        
+        </div>
 
-      </div>
+
+    </div>
 
     <!-- JavaScript File -->
     <script src="JS/app.js"></script>
     <script src="JS/modal.js"></script>
+    <script src="JS/OneSignalSDKWorker.js"></script>
 </body>
 
 </html>
